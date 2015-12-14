@@ -17,7 +17,7 @@ class App extends Component {
       <div>
         Source: <a href="https://github.com/svenanders/minimal-react">github.com/svenanders/minimal-react</a>
       </div>
-      </div>
+    </div>
   }
 }
 
