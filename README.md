@@ -10,7 +10,7 @@ Stats
 - Webpack
 Size: 38KB
 
-Demo: (minimalreact.herokuapp.com)[https://minimalreact.herokuapp.com/]
+Demo: [minimalreact.herokuapp.com](https://minimalreact.herokuapp.com/)
 
 ## Use
 
