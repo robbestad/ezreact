@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+//@flow
+import React, { Component, PropTypes } from 'react';
 import {render} from 'react-dom';
 
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
       <div>- React 0.14</div>
       <div>- Webpack</div>
       <div>Size: 38KB</div>
-      <div>Demo: <a href="https://minimalreact.herokuapp.com/">minimalreact.herokuapp.com</a>
+      <div>Demo: <a href="https://minimalreact.herokuapp.com/">minimalreact.herokuapp.com</a></div>
     </div>
   }
 }
