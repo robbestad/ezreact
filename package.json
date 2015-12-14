@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compress": "sh ./compress.sh",
+    "compress": "sh ./scripts/compress.sh",
     "start": "npm run compress && node server.js"
   },
   "author": "Sven Anders Robbestad <robbestad@gmail.com> (http://www.robbestad.com)",

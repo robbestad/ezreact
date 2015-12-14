@@ -30,7 +30,7 @@ if (process.env.NODE_ENV !== 'development') {
 
 module.exports = {
   devtool: !isProd && 'eval',
-  entry: './app.js',
+  entry: './source/app.js',
   output: {
     path: __dirname,
     filename: './public/bundle.js'
