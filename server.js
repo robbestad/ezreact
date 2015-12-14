@@ -8,8 +8,9 @@ app.use(staticGzip(/(\.ico|\.html|\.js|\.css)$/));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("*", function (req, res) {
-  var file = path.join(__dirname, "public", req.path, ".gz");
-  res.set('Content-Encoding', 'gzip');
+  var file = path.join(__dirname, "public", req.path);
+  //res.set('Content-Encoding', 'gzip');
+  
   res.sendFile(file);
 });
 
