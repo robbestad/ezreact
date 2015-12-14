@@ -10,7 +10,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("*", function (req, res) {
   var file = path.join(__dirname, "public", req.path, ".gz");
   res.set('Content-Encoding', 'gzip');
-  console.log(file);
   res.sendFile(file);
 });
 

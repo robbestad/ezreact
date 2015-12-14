@@ -1,4 +1,5 @@
 #!/bin/bash
+rm ./public/*
 cp ./source/assets/* ./public
 gzip -fq9 ./public/app.css
 gzip -fq9 ./public/favicon.ico
