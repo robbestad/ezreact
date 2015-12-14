@@ -2,3 +2,6 @@ body{
   font-family: 'Bitter', serif;
   padding:10px;
 }
+div{
+  padding: 10px 0 0 0;
+}
