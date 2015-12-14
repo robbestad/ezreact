@@ -6,6 +6,8 @@ node_modules
 vendor
 
 *.zip
+*.gz
+*.tgz
 
 *.log
 *.log.1
