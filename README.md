@@ -8,6 +8,7 @@ Stats
 - Babel 6
 - React 0.14
 - Webpack
+- Hot reloading
 Size: 38KB
 
 Demo: [minimalreact.herokuapp.com](https://minimalreact.herokuapp.com/)
@@ -16,7 +17,8 @@ Demo: [minimalreact.herokuapp.com](https://minimalreact.herokuapp.com/)
 
 1. Run *npm i* to install
 
-2. Run *npm start* to run dev server
+2. Run *npm run dev* to run dev server
 
-3. Success
+3. View results in *http://localhost:3000/*
 
+4. Success
