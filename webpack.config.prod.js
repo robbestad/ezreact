@@ -30,10 +30,10 @@ if (process.env.NODE_ENV !== 'development') {
 
 module.exports = {
   devtool: !isProd && 'eval',
-  entry: './source/app.js',
+  entry: './src/index.js',
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    filename: './public/assets/bundle.js'
   },
   module: {
     loaders: [

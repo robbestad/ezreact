@@ -7,7 +7,7 @@ app.use(staticGzip(/(\.ico|\.html|\.js|\.css)$/));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("*", function (req, res) {
-  var file = path.join(__dirname, "public", req.path);
+  var file = path.join(__dirname, "../", "public", req.path);
   res.sendFile(file);
 });
 
