@@ -14,17 +14,27 @@ class App extends Component {
       <div> It also comes equipped with a ready-2-go express config for both local dev and for publishing your public folder.
       </div>
       <div>
-        To use: download, install node modules and then <strong>npm start</strong>
+        To use: 
+        <p>
+          1. Run <strong>npm i</strong> to install
+          </p><p>
+          2. Run <strong>npm run dev</strong> to run dev server
+          </p><p>
+          3. View results in <strong>http://localhost:3000/</strong>
+          </p><p>
+          4. Success
+        </p>
       </div>
       <div>
         Source: <a href="https://github.com/svenanders/minimal-react">github.com/svenanders/minimal-react</a>
       </div>
       <h3>Stats</h3>
-      <div>- Babel 6</div>
-      <div>- React 0.14</div>
-      <div>- Webpack</div>
-      <div>Size: 38KB</div>
-      <div>Demo: <a href="https://minimalreact.herokuapp.com/">minimalreact.herokuapp.com</a></div>
+      <p>- Babel 6</p>
+      <p>- React 0.14</p>
+      <p>- Webpack</p>
+      <p>- Hot Reload</p>
+      <p><strong>Production size: 38KB</strong></p>
+      <p>Demo: <a href="https://minimalreact.herokuapp.com/">minimalreact.herokuapp.com</a></p>
     </div>
   }
 }
