@@ -12,12 +12,18 @@ var plugins = [
 
 if (process.env.NODE_ENV !== 'development') {
   plugins.push(
+    new webpack.optimize.CommonsChunkPlugin('common.js',  2),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
-      compressor: {
+      compress: {
+        unused: true,
+        dead_code: true,
+        warnings: false,
         screw_ie8: true,
-        warnings: false
       }
     }),
+    new webpack.NoErrorsPlugin(),
     new CompressionPlugin({
       asset: "./{file}.gz",
       algorithm: "gzip",

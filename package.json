@@ -1,6 +1,6 @@
 {
-  "name": "The-most-minimal-React-and-Webpack-config",
-  "version": "1.0.0",
+  "name": "ezreact",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "author": "Sven Anders Robbestad <robbestad@gmail.com> (http://www.robbestad.com)",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.2.0",
@@ -36,9 +36,7 @@
     "rimraf": "^2.4.3",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
-  },
-  "dependencies": {
+    "webpack-hot-middleware": "^2.6.0",
     "express": "^4.13.3",
     "http-static-gzip-regexp": "0.0.2"
   }
