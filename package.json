@@ -1,6 +1,6 @@
 {
   "name": "ezreact",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,6 @@
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
-    "express": "^4.13.3",
     "http-static-gzip-regexp": "0.0.2"
   }
 }
