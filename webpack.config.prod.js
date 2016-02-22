@@ -11,6 +11,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('common.js',  2),
     new webpack.DefinePlugin({
       'process.env': {NODE_ENV: '"production"'}
     }),
