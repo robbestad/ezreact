@@ -10,31 +10,22 @@ class App extends Component {
   render(){
     return <div>
       <h1>EZ React</h1>
-      <div>This is the most minimalistic ReactJS config imaginable. It contains React, Webpack and ES2015 and is only 38KB gzipped.</div>
-      <div> It also comes equipped with a ready-2-go express config for both local dev and for publishing your public folder.
-      </div>
+      <div>React has never been this easy. Just add this package as a dependency and you're good to go. It contains React, Webpack and ES2015 and is only 38KB gzipped.</div>
       <div>
-        To use: 
+        <h4>Instructions</h4>
         <p>
-          1. Run <strong>npm i</strong> to install
+          1. Create a new folder
           </p><p>
-          2. Run <strong>npm run dev</strong> to run dev server
+          2. Type <strong>npm init</strong>
           </p><p>
-          3. View results in <strong>http://localhost:3000/</strong>
+          3. Type <strong>npm i --save ezreact</strong>
           </p><p>
           4. Success
         </p>
       </div>
       <div>
-        Source: <a href="https://github.com/svenanders/minimal-react">github.com/svenanders/minimal-react</a>
+        Source: <a href="https://github.com/svenanders/ezreact">github.com/svenanders/ezreact</a>
       </div>
-      <h3>Stats</h3>
-      <p>- Babel 6</p>
-      <p>- React 0.14</p>
-      <p>- Webpack</p>
-      <p>- Hot Reload</p>
-      <p><strong>Production size: 38KB</strong></p>
-      <p>Demo: <a href="https://minimalreact.herokuapp.com/">minimalreact.herokuapp.com</a></p>
     </div>
   }
 }
