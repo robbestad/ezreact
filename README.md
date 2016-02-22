@@ -1,4 +1,4 @@
-# The most minimal React + Webpack + Babel + Hot reload combo
+# EZ React
 
 This is the most minimalistic ReactJS config imaginable. It contains React, Webpack and ES2015 and is only 38KB gzipped.
 
@@ -18,14 +18,5 @@ Size: 38KB
 
 ## DEMO
 
-[minimalreact.herokuapp.com](https://minimalreact.herokuapp.com/)
+[ezreact.herokuapp.com](https://ezreact.herokuapp.com/)
 
-## Use
-
-1. Run *npm i* to install
-
-2. Run *npm run dev* to run dev server
-
-3. View results in *http://localhost:3000/*
-
-4. Success
