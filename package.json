@@ -1,20 +1,26 @@
 {
   "name": "ezreact",
-  "version": "0.0.2",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Dead simple starter pack for React.js",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "boilerplate",
+    "react-component"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compress": "sh ./scripts/compress.sh",
-    "start": "npm run compress && node servers/dist.js",
-    "clean": "rimraf public",
+    "prestart": "shjs scripts/copy.js",
+    "start": "cross-env NODE_ENV=production ./node_modules/.bin/webpack -p --config webpack.config.prod.js",
+    "poststart": "node servers/dist.js",
     "dev": "node servers/dev.js",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
+    "postbuild": "rimraf public",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "lint": "eslint src"
   },
   "author": "Sven Anders Robbestad <robbestad@gmail.com> (http://www.robbestad.com)",
   "license": "ISC",
+  "reveal": "true",
   "dependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
@@ -22,11 +28,15 @@
     "babel-plugin-react-transform": "^2.0.0-beta1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "compression": "^1.6.1",
     "compression-webpack-plugin": "^0.2.0",
+    "cross-env": "^1.0.7",
     "eslint": "^1.10.3",
     "eslint-plugin-babel": "^3.0.0",
     "eslint-plugin-react": "^3.11.3",
     "express": "^4.13.3",
+    "html-webpack-plugin": "^2.9.0",
+    "http-static-gzip-regexp": "0.0.2",
     "path": "^0.12.7",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
@@ -34,9 +44,9 @@
     "react-transform-hmr": "^1.0.1",
     "redbox-react": "^1.0.1",
     "rimraf": "^2.4.3",
+    "shelljs": "^0.6.0",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0",
-    "http-static-gzip-regexp": "0.0.2"
+    "webpack-hot-middleware": "^2.6.0"
   }
 }

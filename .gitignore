@@ -5,6 +5,8 @@
 node_modules
 vendor
 
+assets/bundle.js
+
 *.zip
 *.tgz
 

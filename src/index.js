@@ -9,7 +9,7 @@ class App extends Component {
 
   render(){
     return <div>
-      <h1>Minimal Webpack + React + Babel + Hot reload</h1>
+      <h1>EZ React</h1>
       <div>This is the most minimalistic ReactJS config imaginable. It contains React, Webpack and ES2015 and is only 38KB gzipped.</div>
       <div> It also comes equipped with a ready-2-go express config for both local dev and for publishing your public folder.
       </div>

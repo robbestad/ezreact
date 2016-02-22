@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
@@ -8,13 +9,17 @@ module.exports = {
     './src/index'
   ],
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
-    publicPath: '/assets/'
+    path: path.join(__dirname, 'assets'),
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'EZ React',
+      template: 'index.ejs',
+      inject: 'body'
+    })
   ],
   module: {
     loaders: [{
