@@ -6,11 +6,9 @@ With EZ React it's dead easy to get going with React, Babel, Hot Module Replacem
 
 Instructions
 
-Clone [ezreact-starter](https://github.com/svenanders/ezreact-starter/) and run npm install.
+Clone [ezreact-starter](https://github.com/svenanders/ezreact-starter/) and run `npm install`.
 
-Then start the it by running npm run dev and open a browser with http://localhost:3000
-
-Size: 38KB
+Then start the it by running `npm run dev` and open a browser with http://localhost:3000
 
 ## DEMO
 
