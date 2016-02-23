@@ -1,18 +1,14 @@
 # EZ React
 
-This is the most minimalistic ReactJS config imaginable. It contains React, Webpack and ES2015 and is only 38KB gzipped.
+This repo is the home for the ezreact npm dependency. Please refer to [ezreact-starter](https://github.com/svenanders/ezreact-starter/) for instructions. 
 
-It also comes equipped with a ready-2-go express config for both local dev (with hot reloading) and for publishing your *public* folder (configured for Heroku).
+With EZ React it's dead easy to get going with React, Babel, Hot Module Replacement etc. All you need to do is add ezreact as a dependency and you'll have a setup with hot reload that's fully ES 2015 ready.
 
-Stats
+Instructions
 
-- Babel 6
+Clone [ezreact-starter](https://github.com/svenanders/ezreact-starter/) and run npm install.
 
-- React 0.14
-
-- Webpack
-
-- Hot reloading
+Then start the it by running npm run dev and open a browser with http://localhost:3000
 
 Size: 38KB
 
